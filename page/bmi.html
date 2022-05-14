@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H.Care | Home</title>
+    <link rel="stylesheet" href="../asset/css/bootstrap.css">
+    <link rel="stylesheet" href="../asset/css/free.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+</head>
+<body id="body">
+    <!-- NAV -->
+    <nav class="nav-area">
+        <div class="nav-toggle" id="navToggle">
+            <ul class="ul-list text-center">
+                <li class="txt-right"><button class="fr-btn mb-3 btn-an-red" id="close-toggle">close</button></li>
+                <a href="../"><li class="">Home</li></a>
+                <a href="page/bmi.html" class="active-li"><li class="">BMI</li></a>
+                <a href="#"><li>Dev</li></a>
+            </ul>
+        </div>
+        <div class="nav-wraper free-nav" id="free_nav">
+            <div class="container">
+                <div class="nav-logo">
+                    <!-- LOGO -->
+                    <h2 class="hed bold">H.Care</h2>
+                </div>
+                <div class="ul-inline nav-ul">
+                    <a href="../"><li>Home</li></a>
+                    <a href=""><li class="active-li">BMI</li></a>
+                    <a href="#"><li>Dev</li></a>
+                    <button class="ham-btn nav-toggle-btn" id="open-toggle">
+                        <div class="div1"></div>
+                        <div class="div2"></div>
+                        <div class="div3"></div>
+                    </button>
+                </div>
+            </div>
+        </div>  
+    </nav>
+
+    <main class="free-main overflow-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="div mt-3 mb-3" id="bmi_result_div">
+                        <p class="hed">Report</p>
+                        <hr>
+                        <p class="txt mb-0"><span class="hed bold txt-blue" id="bmi_result"></span></p>
+                        <div class="txt">
+                            Helth condition: <span id="doc_bmi" class="bold"></span>
+                        </div>
+                    </div> 
+                    <img src="../image/bmi.jpg" class="img-fluid border-round-10 mb-3 mob-none opacity-25" alt="">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="form-wraper">
+                        <div class="div shadow-box">
+                            <form action="" id="bmi-form" class="fr-form">
+                                <p class="hed">BMI test</p>
+
+                                <input class="fr-input" value="" type="number" id="bmi_weight" placeholder="Weight"><br>
+                               
+                                <small id="bmi_hight_alert" class="txt-red"></small>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input class="fr-input" value="" required type="number" id="bmi_hight_foot" placeholder="Foot">
+                                    </div>
+                                    <div class="col-6">
+                                        <input class="fr-input" value="" type="number" id="bmi_hight_inch" placeholder="Inch">
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="fr-btn-r btn-an-blue btn-vl-blue mt-4 w-100"><div></div>Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <p class="txt txt-grey txt-mid position-a w-100 bottom-0">By Ador</p>
+    <!-- Javascript -->
+    <script src="../asset/js/free.js"></script>
+    <script src="../asset/js/main.js"></script>
+</body>
+</html>
